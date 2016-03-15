@@ -13,7 +13,7 @@ gulp.task('javascript',function(){
     transform: [reactify]
   });
   return b.bundle()
-    .pipe(source('app.js'))
+    .pipe(source('index.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init({loadMaps: true}))
       .pipe(uglify())
