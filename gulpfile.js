@@ -8,7 +8,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var reactify = require('reactify');
 gulp.task('javascript',function(){
   var b = browserify({
-    entries: './public/src/index.js',
+    entries: './src/index.js',
     debug: true,
     transform: [reactify]
   });
